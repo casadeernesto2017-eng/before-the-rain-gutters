@@ -334,18 +334,25 @@
             </div>
 
             <!-- SIMPLE EMAIL FORM (opens the visitor's email app) -->
-            <form action="mailto:casadeernesto2017@gmail.com" method="post" enctype="text/plain">
-              <input name="name" placeholder="Name" required />
-              <input name="contact" placeholder="Phone or Email" required />
-              <input name="city" placeholder="City (optional)" />
-              <textarea name="message" placeholder="Tell us about your project (type of home, any issues, timeline)" required></textarea>
-              <button class="btn primary" type="submit">Send Message</button>
-              <div class="hint">
-                This form opens your email app to send the message.
-                Later, we can upgrade this to a “direct send” form (no email app needed) with a free form service.
-              </div>
-            </form>
+           <form action="https://formsubmit.co/casadeernesto2017@gmail.com" method="POST">
+  <!-- Hidden settings -->
+  <input type="hidden" name="_subject" value="New Free Estimate Request — Before the Rain LLC">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://beforetheraingutters.com/#contact">
 
+  <input name="name" placeholder="Name" required />
+  <input name="phone" placeholder="Phone Number" required />
+  <input name="email" type="email" placeholder="Email (optional)" />
+  <input name="city" placeholder="City" />
+  <textarea name="message" placeholder="Tell us about your project (what you need + timeline)" required></textarea>
+
+  <button class="btn primary" type="submit">Get a Free Estimate</button>
+
+  <div class="hint">
+    We’ll follow up quickly by call or text.
+  </div>
+</form>
           </div>
         </div>
       </div>
