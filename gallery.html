@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | Before the Rain LLC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="logo">BR</div>
+        <div><h1>Before the Rain LLC</h1><small>Serving All of Alabama</small></div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a class="cta" href="index.html#contact">Free Estimate</a>
+      </nav>
+      <a class="btn primary" href="index.html#contact">Get a Free Estimate</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <h3>Gallery</h3>
+        <p class="lead">A selection of recent projects across Alabama.</p>
+
+        <div class="gallery-grid">
+          <img src="images/gal1.jpg" alt="Project photo 1">
+          <img src="images/gal2.jpg" alt="Project photo 2">
+          <img src="images/gal3.jpg" alt="Project photo 3">
+          <img src="images/gal4.jpg" alt="Project photo 4">
+          <!-- Add more by duplicating lines below -->
+          <!-- <img src="images/gal5.jpg" alt="Project photo 5"> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div class="tag">© <span id="y"></span> Before the Rain LLC</div></div></footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
