@@ -140,3 +140,30 @@ a{color:inherit; text-decoration:none}
   .gallery-preview img{height:240px}
   .gallery-grid{grid-template-columns:1fr}
 }
+/* ---- Forms / inputs (needed to avoid tiny/janky contact section) ---- */
+form{display:grid; gap:10px}
+input, textarea, select{
+  width:100%;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.25);
+  color:var(--text);
+  outline:none;
+  font-size:14px;
+}
+textarea{min-height:120px; resize:vertical}
+input::placeholder, textarea::placeholder{color: rgba(183,195,230,.8)}
+button{cursor:pointer}
+
+/* ---- Make service cards + buttons consistent ---- */
+.service-card .btn{width:100%}
+
+/* ---- Gallery image polish ---- */
+.gallery-preview img{height:300px}
+@media (max-width: 900px){
+  .gallery-preview img{height:240px}
+}
+
+/* ---- Contact section spacing polish ---- */
+#contact .card{padding:18px !important}
