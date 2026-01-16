@@ -167,3 +167,21 @@ button{cursor:pointer}
 
 /* ---- Contact section spacing polish ---- */
 #contact .card{padding:18px !important}
+/* --- Contact info (left panel) --- */
+.contact-info .k{
+  color: var(--muted);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin:0 0 6px;
+}
+.contact-info .v{
+  font-size:16px;
+  font-weight:900;
+  margin:0;
+}
+.contact-info .row{
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+.contact-info .row:last-child{border-bottom:none}
